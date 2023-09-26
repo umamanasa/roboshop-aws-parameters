@@ -1,4 +1,6 @@
 parameters = {
+
+  ## DEV ENVIRONMENT
   "docdb.dev.master_username" = { type = "String", value = "docdbadmin" }
   "docdb.dev.endpoint"        = { type = "String", value = "dev-docdb-cluster.cluster-cvvxhkbnaklg.us-east-1.docdb.amazonaws.com" }
   "rds.dev.master_username"   = { type = "String", value = "devadmin" }
@@ -28,19 +30,58 @@ parameters = {
   "elasticsearch.password"    = { type = "SecureString", value = "" }
 
   ##Nexus
-  "nexus.username"    = { type = "String", value = "admin" }
-  "nexus.password"    = { type = "SecureString", value = "admin123" }
+  "nexus.username"        = { type = "String", value = "admin" }
+  "nexus.password"        = { type = "SecureString", value = "admin123" }
   "nexus.dev.username"    = { type = "String", value = "admin" }
   "nexus.dev.password"    = { type = "SecureString", value = "admin123" }
 
   ##APP VERSION
   "payment.dev.appVersion"    = { type = "String", value = "1.0.0" }
-  "user.dev.appVersion"    = { type = "String", value = "1.0.1" }
-  "cart.dev.appVersion"    = { type = "String", value = "1.0.0" }
-  "shipping.dev.appVersion"    = { type = "String", value = "1.0.1" }
-  "catalogue.dev.appVersion"    = { type = "String", value = "1.0.1" }
-  "frontend.dev.appVersion"    = { type = "String", value = "1.0.0" }
+  "user.dev.appVersion"       = { type = "String", value = "1.0.1" }
+  "cart.dev.appVersion"       = { type = "String", value = "1.0.0" }
+  "shipping.dev.appVersion"   = { type = "String", value = "1.0.1" }
+  "catalogue.dev.appVersion"  = { type = "String", value = "1.0.1" }
+  "frontend.dev.appVersion"   = { type = "String", value = "1.0.0" }
 
+
+
+  ## PROD ENVIRONMENT
+  "docdb.prod.master_username" = { type = "String", value = "docdbadmin" }
+  "docdb.prod.endpoint"        = { type = "String", value = "dev-docdb-cluster.cluster-cvvxhkbnaklg.us-east-1.docdb.amazonaws.com" }
+  "rds.prod.master_username"   = { type = "String", value = "devadmin" }
+  "rds.prod.database_name"     = { type = "String", value = "dummy" }
+  "user.prod.REDIS_HOST"       = { type = "String", value = "dev-redis-elasticache-cluster.1guo5f.0001.use1.cache.amazonaws.com" }
+  "cart.prod.REDIS_HOST"       = { type = "String", value = "dev-redis-elasticache-cluster.1guo5f.0001.use1.cache.amazonaws.com" }
+  "cart.prod.CATALOGUE_HOST"   = { type = "String", value = "catalogue-prod.manasareddy.online" }
+  "cart.prod.CATALOGUE_PORT"   = { type = "String", value = "80" }
+  "shipping.prod.CART_ENDPOINT"   = { type = "String", value = "cart-prod.manasareddy.online:80" }
+  "shipping.prod.DB_HOST"         = { type = "String", value = "dev-mysql-rds-cluster.cluster-cvvxhkbnaklg.us-east-1.rds.amazonaws.com" }
+
+  "payment.prod.CART_HOST"   = { type = "String", value = "cart-prod.manasareddy.online" }
+  "payment.prod.CART_PORT"   = { type = "String", value = "80" }
+  "payment.prod.USER_HOST"   = { type = "String", value = "user-prod.manasareddy.online" }
+  "payment.prod.USER_PORT"   = { type = "String", value = "80" }
+  "payment.prod.AMQP_HOST"   = { type = "String", value = "rabbitmq-prod.manasareddy.online" }
+
+  "rabbitmq.prod.AMQP_USER"   = { type = "String", value = "roboshop" }
+  "rabbitmq.prod.AMQP_PASS"   = { type = "SecureString", value = "roboshop123" }
+
+  ## Passwords
+  "docdb.prod.master_password" = { type = "SecureString", value = "roboshop1234" }
+  "rds.prod.master_password"   = { type = "SecureString", value = "roboshop1234" }
+
+
+  ##Nexus
+  "nexus.prod.username"    = { type = "String", value = "admin" }
+  "nexus.prod.password"    = { type = "SecureString", value = "admin123" }
+
+  ##APP VERSION
+  "payment.prod.appVersion"     = { type = "String", value = "1.0.0" }
+  "user.prod.appVersion"        = { type = "String", value = "1.0.1" }
+  "cart.prod.appVersion"        = { type = "String", value = "1.0.0" }
+  "shipping.prod.appVersion"    = { type = "String", value = "1.0.1" }
+  "catalogue.prod.appVersion"   = { type = "String", value = "1.0.1" }
+  "frontend.prod.appVersion"    = { type = "String", value = "1.0.0" }
 
 
 }
