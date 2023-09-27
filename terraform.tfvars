@@ -9,8 +9,8 @@ parameters = {
   "cart.dev.REDIS_HOST"       = { type = "String", value = "dev-redis-elasticache-cluster.1guo5f.0001.use1.cache.amazonaws.com" }
   "cart.dev.CATALOGUE_HOST"   = { type = "String", value = "catalogue-dev.manasareddy.online" }
   "cart.dev.CATALOGUE_PORT"   = { type = "String", value = "80" }
-  "shipping.dev.CART_ENDPOINT"   = { type = "String", value = "cart-dev.manasareddy.online:80" }
-  "shipping.dev.DB_HOST"         = { type = "String", value = "dev-mysql-rds-cluster.cluster-cvvxhkbnaklg.us-east-1.rds.amazonaws.com" }
+  "shipping.dev.CART_ENDPOINT" = { type = "String", value = "cart-dev.manasareddy.online:80" }
+  "shipping.dev.DB_HOST"       = { type = "String", value = "dev-mysql-rds-cluster.cluster-cvvxhkbnaklg.us-east-1.rds.amazonaws.com" }
 
   "payment.dev.CART_HOST"   = { type = "String", value = "cart-dev.manasareddy.online" }
   "payment.dev.CART_PORT"   = { type = "String", value = "80" }
