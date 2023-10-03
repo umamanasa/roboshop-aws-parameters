@@ -55,7 +55,7 @@ parameters = {
   "cart.prod.CATALOGUE_HOST"   = { type = "String", value = "catalogue-prod.manasareddy.online" }
   "cart.prod.CATALOGUE_PORT"   = { type = "String", value = "80" }
   "shipping.prod.CART_ENDPOINT"   = { type = "String", value = "cart-prod.manasareddy.online:80" }
-  "shipping.prod.DB_HOST"         = { type = "String", value = "dev-mysql-rds-cluster.cluster-cvvxhkbnaklg.us-east-1.rds.amazonaws.com" }
+  "shipping.prod.DB_HOST"         = { type = "String", value = "prod-mysql-rds-cluster.cluster-cvvxhkbnaklg.us-east-1.rds.amazonaws.com" }
 
   "payment.prod.CART_HOST"   = { type = "String", value = "cart-prod.manasareddy.online" }
   "payment.prod.CART_PORT"   = { type = "String", value = "80" }
