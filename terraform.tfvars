@@ -56,6 +56,9 @@ parameters = {
   "cart.prod.CATALOGUE_PORT"   = { type = "String", value = "80" }
   "shipping.prod.CART_ENDPOINT"   = { type = "String", value = "cart-prod.manasareddy.online:80" }
   "shipping.prod.DB_HOST"         = { type = "String", value = "prod-mysql-rds-cluster.cluster-cvvxhkbnaklg.us-east-1.rds.amazonaws.com" }
+  "catalogue.prod.MONGO_URL"   = {type = "SecureString", value = "mongodb://docdbadmin:roboshop1234@prod-docdb-cluster.cluster-cvvxhkbnaklg.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"}
+  "catalogue.prod.DOCUMENTDB"   = { type = "String", value = "true" }
+
 
   "payment.prod.CART_HOST"   = { type = "String", value = "cart-prod.manasareddy.online" }
   "payment.prod.CART_PORT"   = { type = "String", value = "80" }
