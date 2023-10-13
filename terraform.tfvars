@@ -48,26 +48,32 @@ parameters = {
   ## PROD ENVIRONMENT
   "docdb.prod.master_username" = { type = "String", value = "docdbadmin" }
   "docdb.prod.endpoint"        = { type = "String", value = "dev-docdb-cluster.cluster-cvvxhkbnaklg.us-east-1.docdb.amazonaws.com" }
+
+  "rds.prod.endpoint"          = { type = "String", value = "prod-mysql-rds-cluster.cluster-cvvxhkbnaklg.us-east-1.rds.amazonaws.com" }
   "rds.prod.master_username"   = { type = "String", value = "devadmin" }
   "rds.prod.database_name"     = { type = "String", value = "dummy" }
   "user.prod.REDIS_HOST"       = { type = "String", value = "dev-redis-elasticache-cluster.1guo5f.0001.use1.cache.amazonaws.com" }
   "cart.prod.REDIS_HOST"       = { type = "String", value = "dev-redis-elasticache-cluster.1guo5f.0001.use1.cache.amazonaws.com" }
-  "cart.prod.CATALOGUE_HOST"   = { type = "String", value = "catalogue-prod.manasareddy.online" }
+  "cart.prod.CATALOGUE_HOST"   = { type = "String", value = "catalogue" }
   "cart.prod.CATALOGUE_PORT"   = { type = "String", value = "80" }
-  "shipping.prod.CART_ENDPOINT"   = { type = "String", value = "cart-prod.manasareddy.online:80" }
+  "shipping.prod.CART_ENDPOINT"   = { type = "String", value = "cart:80" }
   "shipping.prod.DB_HOST"         = { type = "String", value = "prod-mysql-rds-cluster.cluster-cvvxhkbnaklg.us-east-1.rds.amazonaws.com" }
+
   "catalogue.prod.MONGO_URL"   = {type = "SecureString", value = "mongodb://docdbadmin:roboshop1234@prod-docdb-cluster.cluster-cvvxhkbnaklg.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"}
   "catalogue.prod.DOCUMENTDB"   = { type = "String", value = "true" }
 
+  "user.prod.MONGO_URL"   = {type = "SecureString", value = "mongodb://docdbadmin:roboshop1234@prod-docdb-cluster.cluster-cvvxhkbnaklg.us-east-1.docdb.amazonaws.com:27017/user?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"}
+  "user.prod.DOCUMENTDB"   = { type = "String", value = "true" }
 
-  "payment.prod.CART_HOST"   = { type = "String", value = "cart-prod.manasareddy.online" }
+
+  "payment.prod.CART_HOST"   = { type = "String", value = "cart" }
   "payment.prod.CART_PORT"   = { type = "String", value = "80" }
-  "payment.prod.USER_HOST"   = { type = "String", value = "user-prod.manasareddy.online" }
+  "payment.prod.USER_HOST"   = { type = "String", value = "user" }
   "payment.prod.USER_PORT"   = { type = "String", value = "80" }
   "payment.prod.AMQP_HOST"   = { type = "String", value = "rabbitmq-prod.manasareddy.online" }
 
-  "rabbitmq.prod.AMQP_USER"   = { type = "String", value = "roboshop" }
-  "rabbitmq.prod.AMQP_PASS"   = { type = "SecureString", value = "roboshop123" }
+  "rabbitmq.prod.AMQP_USER"  = { type = "String", value = "roboshop" }
+  "rabbitmq.prod.AMQP_PASS"  = { type = "SecureString", value = "roboshop123" }
 
   ## Passwords
   "docdb.prod.master_password" = { type = "SecureString", value = "roboshop1234" }
